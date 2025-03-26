@@ -72,9 +72,3 @@ Sinta-se à vontade para contribuir! Se encontrar algum bug ou tiver sugestões 
 O código-fonte deste repositório é disponibilizado **exclusivamente para fins educativos**. **Não é permitida a sua utilização comercial, redistribuição ou qualquer outra forma de uso não autorizado** sem a devida permissão.
 
 Caso tenha interesse em parcerias ou licenciamento, entre em contato.
-
----
-
-Agora o README está mais técnico e voltado ao **frontend**, deixando claro que usa **Vite, JavaScript puro, Tailwind, Devicon, Ionicons e CSS**.
-
-Se quiser ajustes ou mais detalhes, é só falar! 🚀
