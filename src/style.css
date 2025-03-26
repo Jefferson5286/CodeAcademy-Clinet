@@ -8,7 +8,7 @@
 
 .navigation-item {
     color: var(--code-academy-color-1);
-    @apply font-bold hover:cursor-pointer hover:text-white p-2 block;
+    @apply font-bold hover:cursor-pointer hover:text-white p-2;
 }
 
 @layer base {

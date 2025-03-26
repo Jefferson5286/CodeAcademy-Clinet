@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Code Academy - Cursos de Programação</title>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
   <link rel="stylesheet" href="/src/style.css"/>
@@ -23,12 +23,16 @@
       <ion-icon name="ellipsis-vertical" class="text-lg"></ion-icon>
     </button>
 
-    <ul id="menu" class="absolute right-0 top-12 bg-[#2A2150FF] shadow-lg rounded-lg p-4 md:static md:bg-transparent md:p-0 md:shadow-none flex flex-col md:flex-row md:gap-2 transform scale-y-0 origin-top transition-transform duration-300 opacity-0 md:scale-y-100 md:opacity-100">
+    <ul id="menu" class="
+      absolute right-0 top-12 bg-[#2A2150FF] shadow-lg rounded-lg p-4 md:static md:bg-transparent md:p-0
+      md:shadow-none flex flex-col md:flex-row md:gap-2 scale-y-0 origin-top opacity-0 md:scale-y-100 md:opacity-100
+    ">
+
       <li class="navigation-item"><a href="#">Home</a></li>
       <li class="navigation-item"><a href="#">Cursos</a></li>
       <li class="navigation-item"><a href="#">Tutoriais</a></li>
       <li class="navigation-item"><a href="#">Contratar</a></li>
-      <li class="navigation-item"><a href="#">Inscrever-se</a></li>
+      <li class="hidden navigation-item"><a href="#">Inscrever-se</a></li>
       <li class="navigation-item"><a href="#">Suporte</a></li>
     </ul>
   </div>
