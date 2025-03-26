@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code Academy - Cursos de Programação</title>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+  <link rel="stylesheet" href="/src/style.css"/>
+
+</head>
+<body class="text-white">
+
+<nav class="flex bg-[#060021] text-white h-15 items-center justify-between px-4 fixed top-0 left-0 w-full z-50">
+
+  <span class="font-bold text-lg">Code Academy</span>
+
+  <div class="relative">
+    <button id="menu-button" class="md:hidden p-2 text-white rounded-md">
+      <ion-icon name="ellipsis-vertical" class="text-lg"></ion-icon>
+    </button>
+
+    <ul id="menu" class="absolute right-0 top-12 bg-[#2A2150FF] shadow-lg rounded-lg p-4 md:static md:bg-transparent md:p-0 md:shadow-none flex flex-col md:flex-row md:gap-2 transform scale-y-0 origin-top transition-transform duration-300 opacity-0 md:scale-y-100 md:opacity-100">
+      <li class="navigation-item"><a href="#">Home</a></li>
+      <li class="navigation-item"><a href="#">Cursos</a></li>
+      <li class="navigation-item"><a href="#">Tutoriais</a></li>
+      <li class="navigation-item"><a href="#">Contratar</a></li>
+      <li class="navigation-item"><a href="#">Inscrever-se</a></li>
+      <li class="navigation-item"><a href="#">Suporte</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="min-h-screen bg-[#060021] flex flex-col items-center justify-center gap-6 px-6 text-center">
+  <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl max-w-4xl leading-tight text-white">
+    Aprenda Programação do Básico ao Avançado
+  </h1>
+  <p class="text-lg md:text-xl lg:text-2xl max-w-3xl text-gray-300 leading-relaxed">
+    Cursos completos e tutoriais sobre as principais linguagens de programação e suas tecnologias. Comece sua jornada agora!
+  </p>
+  <button
+    class="px-6 py-3 bg-[#e88223] text-white rounded-lg text-lg font-bold active:scale-95 active:opacity-80"
+    aria-label="Começar agora"
+    onclick="navigateToRegister()"
+  >
+    Começar Agora
+  </button>
+</header>
+
+<main class="h-full">
+  <section class="bg-gray-200 py-10">
+
+    <h2 class="text-4xl text-[#060021] font-bold text-center mb-10">Alguns de nossos cursos</h2>
+
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+
+      <div class="card">
+        <i class="devicon-python-plain"></i>
+        <div>
+          <h3>Curso de Python Básico</h3>
+          <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-react-original"></i>
+        <div>
+          <h3>Desenvolvimento Web com React</h3>
+          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-postgresql-plain"></i>
+        <div>
+          <h3>Banco de Dados com PostgreSQL</h3>
+          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-[#060021] py-16 text-white text-center">
+
+    <h2 class="text-4xl font-bold mb-8">Por que estudar conosco?</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+
+      <div class="flex flex-col items-center">
+        <ion-icon name="person-outline" class="text-6xl mb-4"></ion-icon>
+        <h3 class="text-2xl font-semibold mb-2">Instrutores Experientes</h3>
+        <p>Aprenda com os melhores! Nossos instrutores são especialistas no mercado e estão prontos para te guiar.</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <ion-icon name="laptop-outline" class="text-6xl mb-4"></ion-icon>
+        <h3 class="text-2xl font-semibold mb-2">Aulas Práticas</h3>
+        <p>Teoria e prática combinadas para um aprendizado real e aplicável. Faça projetos e desenvolva suas habilidades.</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <ion-icon name="shield-checkmark-outline" class="text-6xl mb-4"></ion-icon>
+        <h3 class="text-2xl font-semibold mb-2">Certificação Reconhecida</h3>
+        <p>Ao finalizar os cursos, você receberá uma certificação reconhecida para alavancar sua carreira.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="comecar-jornada" class="flex flex-col gap-3 bg-gray-200 py-16 px-6 text-white items-center text-center">
+    <h2 class="text-4xl font-bold mb-6 text-[#060021]">Comece sua jornada de aprendizado agora!</h2>
+    <p class="text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mb-8 text-gray-700">
+      Junte-se à nossa comunidade de alunos e comece a aprender as habilidades que irão transformar sua carreira.
+      Explore nossos cursos e inicie sua jornada de aprendizado agora mesmo!
+    </p>
+    <a href="/inscricao/" class="w-max px-6 py-3 bg-[#e88223] text-white rounded-lg text-lg font-bold active:scale-95 active:opacity-80">
+      Inscreva-se Agora
+    </a>
+  </section>
+</main>
+<footer class="bg-[#060021] h-50">
+  Algum coisa de footer
+</footer>
+<script type="module" src="/src/script.js"></script>
+<script>
+    function navigateToRegister() {
+        document.getElementById('comecar-jornada').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>

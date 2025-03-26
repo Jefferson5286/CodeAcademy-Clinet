@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+:root {
+    --code-academy-color-1: #e88223;
+    --code-academy-color-2: #1e1d46;
+    --code-academy-color-3: #000000;
+}
+
+.navigation-item {
+    color: var(--code-academy-color-1);
+    @apply font-bold hover:cursor-pointer hover:text-white p-2 block;
+}
+
+@layer base {
+    * {@apply transition-all duration-300 ease-in-out;}
+}
+
+@layer components {
+    .card {@apply bg-white rounded-2xl shadow-lg transition-transform hover:scale-105;}
+    .card i {@apply w-full h-22 flex items-center justify-center text-white rounded-t-2xl bg-[#060021] text-5xl}
+    .card div {@apply p-6}
+    .card h3 {@apply text-2xl font-bold text-[#060021];}
+    .card p {@apply text-gray-600 mt-2;}
+    .card a {@apply inline-block mt-4 text-blue-600 font-semibold hover:underline;}
+
+    .item {@apply bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center transition-all duration-300 ease-in-out;}
+    .item:hover {@apply scale-105 shadow-xl;}
+    .item h3 {@apply text-2xl font-semibold mb-2 text-[#060021];}
+    .item p {@apply text-gray-600 text-center;}
+}
