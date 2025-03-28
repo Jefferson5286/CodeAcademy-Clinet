@@ -12,15 +12,22 @@
 }
 
 @layer base {
-    * {@apply transition-all duration-300 ease-in-out;}
+    * {@apply transition-transform duration-300 ease-in-out hover:transition-none;}
 }
 
 @layer components {
-    .card {@apply bg-white rounded-2xl shadow-lg transition-transform hover:scale-105;}
+    .card {@apply bg-white rounded-2xl shadow-lg transition-transform hover:scale-105 max-w-115 m-auto;}
     .card i {@apply w-full h-22 flex items-center justify-center text-white rounded-t-2xl bg-[#060021] text-5xl}
     .card div {@apply p-6}
     .card h3 {@apply text-2xl font-bold text-[#060021];}
-    .card p {@apply text-gray-600 mt-2;}
+    .card p {
+        @apply text-gray-600 mt-2;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Número de linhas */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .card a {@apply inline-block mt-4 text-blue-600 font-semibold hover:underline;}
 
     .item {@apply bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center transition-all duration-300 ease-in-out;}

@@ -14,6 +14,29 @@ function handleNavigationMenu() {
     })
 }
 
+function handleProfileModal() {
+    const openModal = document.getElementById('openProfileModal')
+    const closeModal = document.getElementById('closeProfileModal')
+    const modal = document.getElementById('profileModal')
+
+    openModal.addEventListener('click', () => {
+        modal.classList.replace('hidden', 'flex')
+    })
+
+    closeModal.addEventListener('click', () => {
+        modal.classList.replace('flex', 'hidden')
+    })
+
+    // Fechar ao clicar fora do popup
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.replace('flex', 'hidden')
+        }
+    })
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     handleNavigationMenu()
+    handleProfileModal()
 })
