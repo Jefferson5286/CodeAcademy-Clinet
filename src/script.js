@@ -19,20 +19,28 @@ function handleProfileModal() {
     const closeModal = document.getElementById('closeProfileModal')
     const modal = document.getElementById('profileModal')
 
-    openModal.addEventListener('click', () => {
-        modal.classList.replace('hidden', 'flex')
-    })
+    const signLink = document.getElementById('signupLink')
+    const profileButtonContainer = document.getElementById('profileButtonContainer')
 
-    closeModal.addEventListener('click', () => {
-        modal.classList.replace('flex', 'hidden')
-    })
+    if (localStorage.getItem('token')) {
+        signLink.classList.toggle('hidden')
+        profileButtonContainer.classList.replace('hidden', 'block')
 
-    // Fechar ao clicar fora do popup
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
+        openModal.addEventListener('click', () => {
+            modal.classList.replace('hidden', 'flex')
+        })
+
+        closeModal.addEventListener('click', () => {
             modal.classList.replace('flex', 'hidden')
-        }
-    })
+        })
+
+        // Fechar ao clicar fora do popup
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.replace('flex', 'hidden')
+            }
+        })
+    }
 }
 
 
