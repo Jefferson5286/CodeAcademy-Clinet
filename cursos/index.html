@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cursos</title>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+  <link rel="stylesheet" href="/src/style.css"/>
+
+  <style>
+      @import 'tailwindcss';
+
+    .BaseContainerCA {
+        @apply max-w-350 mx-auto
+    }
+  </style>
+</head>
+<body class="bg-[#ededed]">
+<nav class="flex bg-[#060021] text-white h-15 items-center justify-between px-4 fixed top-0 left-0 w-full z-50">
+
+  <span class="font-bold text-lg">Code Academy</span>
+
+  <div class="relative">
+    <button id="menu-button" class="lg:hidden p-2 text-white rounded-md">
+      <ion-icon name="ellipsis-vertical" class="text-lg"></ion-icon>
+    </button>
+
+    <div id="menu" class="
+      flex absolute right-0 top-12 bg-[#2A2150FF] shadow-lg rounded-lg p-4
+      opacity-0 scale-y-0 origin-top flex-col-reverse w-max
+
+      lg:static lg:bg-transparent lg:p-0
+      lg:shadow-none lg:flex-row lg:gap-2
+      lg:scale-y-100 lg:opacity-100
+    ">
+
+      <div class="flex flex-col lg:flex-row">
+        <a class="navigation-item" href="/">Home</a>
+        <a class="navigation-item" href="#" style="color: white; text-decoration: underline">Cursos</a>
+        <a class="navigation-item" href="#">Tutoriais</a>
+        <a class="navigation-item" href="#">Contratar</a>
+        <a class="navigation-item" id="signupLink" href="#">Inscrever-se</a>
+        <a class="navigation-item" href="#">Suporte</a>
+      </div>
+      <div class="w-full hidden" id="profileButtonContainer">
+        <button id="openProfileModal" class="flex items-center p-1 bg-white rounded-full shadow-md hover:shadow-lg transition">
+          <img src="https://i.pravatar.cc/40" alt="Avatar" class="w-7 h-7 rounded-full">
+          <span class="text-gray-700 text-sm font-semibold mx-2">Meu Perfil</span>
+        </button>
+        <hr class="lg:hidden w-full mt-3 opacity-50"/>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-15">
+  <div class="my-4 px-2 max-w-200 mx-auto">
+    <div class="flex justify-center gap-2 items-center">
+      <label class="w-full">
+        <input
+          id="searchCouse"
+          placeholder="Digite o nome do seu curso"
+          class="px-2 h-11 border-2 border-[#060021] focus:outline-[#e88223] focus:text-[#e88223] rounded-lg w-full"
+        />
+      </label>
+      <button class="BaseButton bg-[#060021]">Pesquisar</button>
+    </div>
+
+    <h1 class="mt-2 mb-4 text-2xl font-bold text-[#060021] lg:text-3xl md:mt-4 md:mb-6">Nosso cursos</h1>
+  </div>
+
+  <div class="BaseContainerCA px-2">
+    <hr class="mb-4 opacity-30 md:mb-6 border-1 border-[#060021]">
+  </div>
+
+  <section class="BaseContainerCA pb-8">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-y-18 md:gap-x-10 px-4">
+      <div class="card">
+        <i class="devicon-python-plain"></i>
+        <div>
+          <h3>Curso de Python Básico</h3>
+          <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-react-original"></i>
+        <div>
+          <h3>Desenvolvimento Web com React</h3>
+          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-postgresql-plain"></i>
+        <div>
+          <h3>Banco de Dados com PostgreSQL</h3>
+          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-python-plain"></i>
+        <div>
+          <h3>Curso de Python Básico</h3>
+          <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-react-original"></i>
+        <div>
+          <h3>Desenvolvimento Web com React</h3>
+          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-postgresql-plain"></i>
+        <div>
+          <h3>Banco de Dados com PostgreSQL</h3>
+          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-python-plain"></i>
+        <div>
+          <h3>Curso de Python Básico</h3>
+          <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-react-original"></i>
+        <div>
+          <h3>Desenvolvimento Web com React</h3>
+          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-postgresql-plain"></i>
+        <div>
+          <h3>Banco de Dados com PostgreSQL</h3>
+          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-python-plain"></i>
+        <div>
+          <h3>Curso de Python Básico</h3>
+          <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-react-original"></i>
+        <div>
+          <h3>Desenvolvimento Web com React</h3>
+          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="devicon-postgresql-plain"></i>
+        <div>
+          <h3>Banco de Dados com PostgreSQL</h3>
+          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+<footer class="bg-[#060021] h-50">
+  Algum coisa de footer
+</footer>
+
+<div id="profileModal" class="fixed inset-0 items-center justify-center bg-black/75 z-50 hidden">
+  <div class="bg-white rounded-lg shadow-lg w-96 py-6 relative">
+    <!-- Botão de fechar -->
+    <button id="closeProfileModal" class="absolute top-2 right-2 text-[#060021] hover:text-red-600 text-xl">
+      &times;
+    </button>
+
+    <div class="modal-item">
+      <img alt="Avatar" class="rounded-full h-12 w-12 border-2 border-[#060021]" src="https://i.pravatar.cc/40">
+      <div>
+        <span class="text-[#060021] font-bold text-xl">Meu usuário</span>
+        <br/>
+        <span class="text-[#060021] text-sm opacity-50">Clique aqui para ver seu perfil.</span>
+      </div>
+    </div>
+    <hr class="my-2 opacity-30 border-1 border-[#060021]">
+
+    <div class="modal-item text-[#060021]">
+      <ion-icon name="library"></ion-icon>
+      <a href="#">Ver meus cursos</a>
+    </div>
+    <div class="modal-item text-[#060021]">
+      <ion-icon name="school"></ion-icon>
+      <a href="#">Meus certificados</a>
+    </div>
+    <div class="modal-item text-[#060021]">
+      <ion-icon name="briefcase"></ion-icon>
+      <a href="#">Code Academy Worker</a>
+    </div>
+    <div class="modal-item text-red-600">
+      <ion-icon name="exit"></ion-icon>
+      <a href="#">Sair</a>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="/src/script.js"></script>
+
+</body>
+</html>

@@ -6,20 +6,37 @@
     --code-academy-color-3: #000000;
 }
 
-.navigation-item {
-    color: var(--code-academy-color-1);
-    @apply font-bold hover:cursor-pointer hover:text-white p-2;
-}
-
 @layer base {
     * {@apply transition-transform duration-300 ease-in-out hover:transition-none;}
 }
 
 @layer components {
-    .card {@apply bg-white rounded-2xl shadow-lg transition-transform hover:scale-105 max-w-115 m-auto;}
-    .card i {@apply w-full h-22 flex items-center justify-center text-white rounded-t-2xl bg-[#060021] text-5xl}
-    .card div {@apply p-6}
-    .card h3 {@apply text-2xl font-bold text-[#060021];}
+    .navigation-item {
+        color: var(--code-academy-color-1);
+        @apply font-bold hover:cursor-pointer hover:text-white p-2;
+    }
+
+    .card {
+        @apply bg-white rounded-2xl shadow-lg transition-transform hover:scale-105 max-w-115 m-auto;
+    }
+
+    .card i {
+        @apply w-full h-22 flex items-center justify-center text-white rounded-t-2xl bg-[#060021] text-5xl
+    }
+
+    .card div {
+        @apply p-6
+    }
+
+    .card h3 {
+        @apply text-2xl font-bold text-[#060021];
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* Número de linhas */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     .card p {
         @apply text-gray-600 mt-2;
         display: -webkit-box;
@@ -28,5 +45,22 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .card a {@apply inline-block mt-4 text-blue-600 font-semibold hover:underline;}
+
+    .card a {
+        @apply inline-block mt-4 text-blue-600 font-semibold hover:underline;
+    }
+
+    .BaseButton {
+        @apply px-6 h-12 text-white rounded-lg text-lg font-bold active:scale-95 active:opacity-80;
+    }
+
+    .modal-item {
+        @apply py-4 hover:bg-[rgba(0,0,0,.2)] px-6 flex items-center gap-2 cursor-pointer active:scale-95;
+    }
+    .modal-item a{
+        @apply font-bold text-lg;
+    }
+    .modal-item ion-icon {
+        @apply font-bold text-xl;
+    }
 }
