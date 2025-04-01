@@ -71,6 +71,12 @@
     }
 
     .BaseLink {
-        @apply text-[#e88223] underline
+        @apply text-[#e88223] underline;
+    }
+    .PaginationButton {
+        @apply text-[#e88223] border-2 border-[#e88223] h-9 w-9 font-bold active:scale-95 active:opacity-80;
+    }
+    .PaginationButtonFocused {
+        @apply text-[#060021] bg-[#e88223] h-9 w-9 font-bold active:scale-95 active:opacity-80;
     }
 }

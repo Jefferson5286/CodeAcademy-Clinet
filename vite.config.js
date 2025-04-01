@@ -12,6 +12,7 @@ export default defineConfig({
                 cursos: {target: './src/pages/cursos.html', route: '/cursos'},
                 registrar: {target: './src/pages/registrar.html', route: '/registrar'},
                 entrar: {target: './src/pages/entrar.html', route: '/entrar'},
+                tutoriais: {target: './src/pages/tutoriais.html', route: '/tutoriais'}
             }
         })
     ]
