@@ -9,7 +9,9 @@ export default defineConfig({
         viteSimpleMPA({
             pages: {
                 leading: {target: './src/pages/leading.html', route: '/'},
-                cursos: {target: './src/pages/cursos.html', route: '/cursos'}
+                cursos: {target: './src/pages/cursos.html', route: '/cursos'},
+                registrar: {target: './src/pages/registrar.html', route: '/registrar'},
+                entrar: {target: './src/pages/entrar.html', route: '/entrar'},
             }
         })
     ]

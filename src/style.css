@@ -57,10 +57,20 @@
     .modal-item {
         @apply py-4 hover:bg-[rgba(0,0,0,.2)] px-6 flex items-center gap-2 cursor-pointer active:scale-95;
     }
-    .modal-item a{
+    .modal-item a {
         @apply font-bold text-lg;
     }
     .modal-item ion-icon {
         @apply font-bold text-xl;
+    }
+    .formInput label {
+        @apply font-bold text-[#060021];
+    }
+    .formInput input {
+        @apply px-2 h-11 border-2 border-[#060021] focus:outline-[#e88223] focus:text-[#e88223] rounded-lg w-full;
+    }
+
+    .BaseLink {
+        @apply text-[#e88223] underline
     }
 }
