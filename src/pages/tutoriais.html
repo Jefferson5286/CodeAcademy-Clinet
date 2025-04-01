@@ -14,9 +14,9 @@
   <style>
       @import 'tailwindcss';
 
-    .BaseContainerCA {
-        @apply max-w-350 mx-auto
-    }
+      .BaseContainerCA {
+          @apply max-w-350 mx-auto
+      }
   </style>
 </head>
 <body class="bg-[#ededed]">
@@ -40,8 +40,8 @@
 
       <div class="flex flex-col lg:flex-row">
         <a class="navigation-item" href="/">Home</a>
-        <a class="navigation-item" href="/cursos" style="color: white; text-decoration: underline">Cursos</a>
-        <a class="navigation-item" href="#">Tutoriais</a>
+        <a class="navigation-item" href="/cursos">Cursos</a>
+        <a class="navigation-item" href="/tutoriais" style="color: white; text-decoration: underline">Tutoriais</a>
         <a class="navigation-item" href="#">Contratar</a>
         <a class="navigation-item" id="signupLink" href="/registrar">Inscrever-se</a>
         <a class="navigation-item" href="#">Suporte</a>
@@ -62,15 +62,15 @@
     <div class="flex justify-center gap-2 items-center">
       <label class="w-full">
         <input
-          id="searchCouse"
-          placeholder="Digite o nome do seu curso"
+          id="searchTutorial"
+          placeholder="Digite o nome do tutorial desejado"
           class="px-2 h-11 border-2 border-[#060021] focus:outline-[#e88223] focus:text-[#e88223] rounded-lg w-full"
         />
       </label>
       <button class="BaseButton bg-[#060021]">Pesquisar</button>
     </div>
 
-    <h1 class="mt-2 mb-4 text-2xl font-bold text-[#060021] lg:text-3xl md:mt-4 md:mb-6">Nosso cursos</h1>
+    <h1 class="mt-2 mb-4 text-2xl font-bold text-[#060021] lg:text-3xl md:mt-4 md:mb-6">Nossos Tutoriais Rápidos</h1>
   </div>
 
   <div class="BaseContainerCA px-2">
@@ -82,113 +82,14 @@
       <div class="card">
         <i class="devicon-python-plain"></i>
         <div>
-          <h3>Curso de Python Básico</h3>
+          <h3>Como criar uma API com Python</h3>
           <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
           <a href="#">Saiba mais</a>
         </div>
       </div>
-
-      <div class="card">
-        <i class="devicon-react-original"></i>
-        <div>
-          <h3>Desenvolvimento Web com React</h3>
-          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-postgresql-plain"></i>
-        <div>
-          <h3>Banco de Dados com PostgreSQL</h3>
-          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-python-plain"></i>
-        <div>
-          <h3>Curso de Python Básico</h3>
-          <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-react-original"></i>
-        <div>
-          <h3>Desenvolvimento Web com React</h3>
-          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-postgresql-plain"></i>
-        <div>
-          <h3>Banco de Dados com PostgreSQL</h3>
-          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-python-plain"></i>
-        <div>
-          <h3>Curso de Python Básico</h3>
-          <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-react-original"></i>
-        <div>
-          <h3>Desenvolvimento Web com React</h3>
-          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-postgresql-plain"></i>
-        <div>
-          <h3>Banco de Dados com PostgreSQL</h3>
-          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-python-plain"></i>
-        <div>
-          <h3>Curso de Python Básico</h3>
-          <p>Aprenda os fundamentos do Python, incluindo sintaxe, variáveis e estruturas de controle.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-react-original"></i>
-        <div>
-          <h3>Desenvolvimento Web com React</h3>
-          <p>Crie interfaces dinâmicas e responsivas utilizando React e ferramentas modernas.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <i class="devicon-postgresql-plain"></i>
-        <div>
-          <h3>Banco de Dados com PostgreSQL</h3>
-          <p>Aprenda a modelar, consultar e otimizar bancos de dados com PostgreSQL, uma das tecnologias mais robustas e utilizadas no mercado.</p>
-          <a href="#">Saiba mais</a>
-        </div>
-      </div>
-
     </div>
   </section>
+
 </main>
 
 <div class="BaseContainerCA px-2">
